@@ -23,10 +23,7 @@ async def on_ready():
         if guild.name == GUILD:
             break
 
-    print(
-        f'{client.user} is connected to the following guild:\n'
-        f'{guild.name}(id: {guild.id})'
-    )
+    print('%s is connected to the following guild:\n%s(id: %s)'%(client.user,guild.name,guild.id))
 
 @client.event
 async def on_message(message):
